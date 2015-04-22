@@ -1,0 +1,14 @@
+{
+    "settings": {
+        "title": "My Totes Great Portfolio",
+        "logBar": true,
+        "logReq": false,
+        "ownerID": 0,
+        "private": true,
+        "perms": 0
+    },
+    "template": {
+        "templateID": 3,
+		"load": false
+    }
+}

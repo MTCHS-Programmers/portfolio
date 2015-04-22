@@ -1,0 +1,29 @@
+.sample:nth-child(1) {
+    -webkit-transition-delay: 0ms;
+	transition-delay: 0ms;
+}
+
+.sampleList.current .sample:nth-child(1) {
+	-webkit-transition-delay: 450ms;
+	transition-delay: 450ms;
+}
+
+.sample:nth-child(2) {
+    -webkit-transition-delay: 100ms;
+	transition-delay: 100ms;
+}
+
+.sampleList.current .sample:nth-child(2) {
+	-webkit-transition-delay: 550ms;
+	transition-delay: 550ms;
+}
+
+.sample:nth-child(3) {
+    -webkit-transition-delay: 200ms;
+	transition-delay: 200ms;
+}
+
+.sampleList.current .sample:nth-child(3) {
+	-webkit-transition-delay: 650ms;
+	transition-delay: 650ms;
+}

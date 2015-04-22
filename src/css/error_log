@@ -1,0 +1,5 @@
+[18-Apr-2015 15:39:08 America/Denver] PHP Parse error:  syntax error, unexpected '.' in /home/rettoph/public_html/portfolio/src/css/stagger.php on line 7
+[18-Apr-2015 15:39:11 America/Denver] PHP Parse error:  syntax error, unexpected '.' in /home/rettoph/public_html/portfolio/src/css/stagger.php on line 7
+[18-Apr-2015 15:51:18 America/Denver] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/rettoph/public_html/portfolio/src/css/stagger.php on line 10
+[18-Apr-2015 15:51:19 America/Denver] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/rettoph/public_html/portfolio/src/css/stagger.php on line 10
+[18-Apr-2015 15:51:23 America/Denver] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/rettoph/public_html/portfolio/src/css/stagger.php on line 11

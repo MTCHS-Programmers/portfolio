@@ -1,0 +1,10 @@
+{
+    "settings": {
+        "title": ["Skills"],
+        "logBar": true,
+        "logReq": true,
+        "ownerID": 0,
+        "private": true,
+        "perms": 0
+    }
+}

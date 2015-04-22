@@ -1,0 +1,191 @@
+body, p, div, a, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+body {
+	overflow: hidden;
+	
+	/*
+	background-size: 100vw 100vh;
+	background: -webkit-radial-gradient(rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.4));
+	background: -o-radial-gradient(rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.4));
+	background: -moz-radial-gradient(rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.4));
+	background: radial-gradient(rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.4));*/
+	
+	transition: background 2s;
+}
+
+#backgroundImage {
+	background: url('/portfolio/src/images/escheresque_ste.png');
+	position: fixed;
+	height: 115vh;
+	width: 100%;
+	z-index: -1;
+	
+	-ms-transform: translate(0, 0); /* IE 9 */
+   	-webkit-transform: translate(0, 0); /* Safari */
+    transform: translate(0, 0);
+	
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+}
+
+#backgroundImage.skills {
+	-ms-transform: translate(0, -15vh); /* IE 9 */
+   	-webkit-transform: translate(0, -15vh); /* Safari */
+    transform: translate(0, -15vh);
+}
+
+#wrapper {
+	height: 200vh;
+	
+	-ms-transform: translate(0, 0); /* IE 9 */
+   	-webkit-transform: translate(0, 0); /* Safari */
+    transform: translate(0, 0);
+	
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+}
+
+#wrapper.skills {
+	-ms-transform: translate(0, -100vh); /* IE 9 */
+   	-webkit-transform: translate(0, -100vh); /* Safari */
+    transform: translate(0, -100vh);
+}
+
+#about {
+	height: 100vh;
+}
+
+#skills {
+	background: lightGrey;
+	box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.3);
+	font-size: 2vh;
+	height: 7vh;
+	line-height: 7vh;
+	overflow: hidden;
+	position: absolute;
+	width: 100vw;	
+	z-index: 2;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	
+	-webkit-transition: background 1s;
+	transition: background 1s;
+}
+
+.skill {
+	color: white;
+	float: left;
+	height: 7vh;
+	text-align: center;
+	width: calc(79vw/5);
+	z-index: 2;
+	
+	-webkit-transition: width 500ms, background 500ms;
+	transition: width 500ms, background 500ms;
+}
+
+.skill.current {
+	width: 21vw;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.skill:not(.current):hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#content {
+	max-height: 93vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+	top: 7vh;
+}
+
+#work {
+	min-height: 93vh;
+	width: 99.9vw;
+}
+
+/* scrollbar for work */
+::-webkit-scrollbar {
+	width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.sampleList {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.sampleList.current {
+	z-index: 1;
+}
+
+.sample {
+	background: white;
+	box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 2vh;
+	height: 5vh;
+	margin: 1vh auto 0 auto;
+	overflow: hidden;
+	padding: 0 1vh;
+	width: 90vw;
+	
+	-webkit-transition: height ease 420ms, transform 425ms;
+	transition: height ease 420ms, transform 425ms;
+	
+	-webkit-transform: rotate3d(10, 0, 0, 90deg);
+	transform: rotate3d(10, 0, 0, 90deg);
+}
+
+.sampleList.current .sample {
+	-webkit-transform: rotate3d(10, 0, 0, 0deg);
+	transform: rotate3d(10, 0, 0, 0deg);
+}
+
+.title {
+	line-height: 5vh;
+	font-weight: bold;
+	cursor: pointer;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.desc {
+	padding-bottom: 1vh;
+}
+
+.linkContainer {
+	font-size: 1.5vh;
+	margin: 2px auto;
+}
+
+.linkTitle {
+	font-weight: bold;
+}
